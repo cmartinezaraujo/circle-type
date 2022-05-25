@@ -1,6 +1,6 @@
-let circleTypes = [];
 
-let radius = (window.screen.width > 2000) ? 280 : 180;
+//Keep reference to all circle types in case we want to update later
+let circleTypes = [];
 
 fetch("//ergast.com/api/f1/current/constructorStandings.json")
 .then(response => response.json())
@@ -37,26 +37,7 @@ const insertTeam = (container, team, position, points, id) => {
 const addCircleType = (query) => {
     const text = document.querySelector(`.${query}-ct`);
     const span = document.querySelectorAll("span");
-    let circle = new CircleType(text).radius(radius);
+    let circle = new CircleType(text).radius(180);
     circleTypes.push(circle);
 };
-
-function updateRadius() {
-    //console.log("Available screen width: " + window.innerWidth);
-    if (window.innerWidth > 2000 && radius !== 280) {
-        radius = 280;
-        circleTypes.forEach(circle => {
-            circle.radius(radius);
-        });
-    }else if(window.innerWidth < 2000 && radius !== 180) {
-        radius = 180;
-        circleTypes.forEach(circle => {
-            circle.radius(radius);
-        });
-    }
-}
-
-window.addEventListener('resize', () => {
-    updateRadius();
-});
 

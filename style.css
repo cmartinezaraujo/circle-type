@@ -110,31 +110,3 @@ body{
     border: 6px solid rgba(21, 192, 219, 1);
 }
 
-@media 
-  (min-width: 2000px) { 
-    .title{
-        font-size: 6em;
-    }
-
-    .standings-container{
-        gap: 3em;
-    }
-
-    .circle-shape{
-        width: 400px;
-        height: 400px;
-    }
-
-    .team-name{
-        font-size: 4em;
-    }
-
-    .team-place{
-        font-size: 8em;
-    }
-    
-    .team-points{
-        font-size: 2em;
-    }
-}
-
