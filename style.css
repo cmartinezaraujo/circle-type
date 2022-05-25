@@ -1,6 +1,7 @@
 /* Insert styles here */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('satoshi.css');
 
 *{
     margin: 0;
@@ -13,7 +14,7 @@ body{
 }
 
 .title{
-    font-family: 'open sans', sans-serif;
+    font-family: 'Satoshi-Black';
     font-size: 3em;
     color: white;
     text-align: center;
@@ -44,8 +45,8 @@ body{
 
 .circle-shape{
     /* Margin to fix height */
-    background: rgb(34, 115, 194);
-    border: 2px solid white;
+    /* background: rgb(34, 115, 194); */
+    /* border: 2px solid white; */
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -70,42 +71,70 @@ body{
 }
 
 .red_bull{
-    background: rgb(34, 115, 194);
+    border: 6px solid rgba(34, 115, 194, 1);
 }
 
 .ferrari{
-    background: rgb(254, 0, 55);
+    border: 6px solid rgba(254, 0, 55, 1);
 }
 
 .mercedes{
-    background: rgb(101, 212, 192);
+    border: 6px solid rgba(101, 212, 192, 1);
 }
 
 .mclaren{
-    background: rgb(250, 124, 48);
+    border: 6px solid rgba(250, 124, 48, 1);
 }
 
 .alfa{
-    background: rgb(205, 35, 75);
+    border: 6px solid rgba(205, 35, 75, 1);
 }
 
 .alpine{
-    background: rgb(0, 149, 206);
+    border: 6px solid rgba(0, 149, 206, 1);
 }
 
 .alphatauri{
-    background: rgb(89, 144, 168);
+    border: 6px solid rgba(89, 144, 168, 1);
 }
 
 .haas{
-    background: rgb(182, 186, 189);
+    border: 6px solid rgba(182, 186, 189, 1);
 }
 
 .aston_martin{
-    background: rgb(46, 141, 118);
+    border: 6px solid rgba(46, 141, 118, 1);
 }
 
 .williams{
-    background: rgb(21, 192, 219);
+    border: 6px solid rgba(21, 192, 219, 1);
+}
+
+@media 
+  (min-width: 2000px) { 
+    .title{
+        font-size: 6em;
+    }
+
+    .standings-container{
+        gap: 3em;
+    }
+
+    .circle-shape{
+        width: 400px;
+        height: 400px;
+    }
+
+    .team-name{
+        font-size: 4em;
+    }
+
+    .team-place{
+        font-size: 8em;
+    }
+    
+    .team-points{
+        font-size: 2em;
+    }
 }
 
