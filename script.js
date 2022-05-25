@@ -10,7 +10,7 @@ const bod = document.querySelector("body");
 console.log(bod.width);
 
 
-fetch("http://ergast.com/api/f1/current/constructorStandings.json")
+fetch("//ergast.com/api/f1/current/constructorStandings.json")
 .then(response => response.json())
 .then(data => {
     const standings = data.MRData.StandingsTable.StandingsLists;
