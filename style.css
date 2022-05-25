@@ -1,4 +1,111 @@
 /* Insert styles here */
-h1{
-    color: black;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
+
+body{
+    background: rgb(21, 21, 30);
+}
+
+.title{
+    font-family: 'open sans', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.standings-container{
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.team-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.team-name{
+    font-family: "open sans";
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+}
+
+.circle-shape{
+    /* Margin to fix height */
+    background: rgb(34, 115, 194);
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: center;
+}
+
+.team-place{
+    font-family: "open sans";
+    font-size: 4em;
+    font-weight: 600;
+    color: white;
+}
+
+.team-points{
+    font-family: "open sans";
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+
+.red_bull{
+    background: rgb(34, 115, 194);
+}
+
+.ferrari{
+    background: rgb(254, 0, 55);
+}
+
+.mercedes{
+    background: rgb(101, 212, 192);
+}
+
+.mclaren{
+    background: rgb(250, 124, 48);
+}
+
+.alfa{
+    background: rgb(205, 35, 75);
+}
+
+.alpine{
+    background: rgb(0, 149, 206);
+}
+
+.alphatauri{
+    background: rgb(89, 144, 168);
+}
+
+.haas{
+    background: rgb(182, 186, 189);
+}
+
+.aston_martin{
+    background: rgb(46, 141, 118);
+}
+
+.williams{
+    background: rgb(21, 192, 219);
+}
+
