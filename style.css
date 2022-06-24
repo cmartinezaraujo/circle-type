@@ -44,9 +44,6 @@ body{
 }
 
 .circle-shape{
-    /* Margin to fix height */
-    /* background: rgb(34, 115, 194); */
-    /* border: 2px solid white; */
     width: 200px;
     height: 200px;
     border-radius: 50%;
